@@ -1,5 +1,7 @@
 # Reparameterized Attention for Convolutional Neural Networks
 
+This repository contains the code to reproduce the experiments carried out in `Reparameterized Attention for Convolutional Neural Networks`.
+
 ![Reparameterized Attention](docs/arch.pdf)
 
 # Install
