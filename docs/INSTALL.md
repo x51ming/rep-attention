@@ -1,7 +1,7 @@
 1. Clone the project
     ```
     git clone https://github.com/x51ming/rep-attention.git
-    cd *
+    cd rep-attention
     ```
 
 2. Create a conda environment
