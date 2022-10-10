@@ -82,8 +82,7 @@ if __name__ == "__main__":
     gState.args = args
 
     fn = any_import(args.from_, args.import_)
-    model: nn.Module = fn(num_classes=args.num_classes,
-                          pretrained=args.pretrained)
+    model: nn.Module = fn(num_classes=args.num_classes)
     if args.evaluate_model != 'ignore':
         checkpoint: dict = torch.load(args.evaluate_model, 'cpu')
         if "state_dict" in checkpoint:

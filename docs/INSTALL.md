@@ -1,6 +1,6 @@
 1. Clone the project
     ```
-    git clone https://github.com/x51ming/*.git
+    git clone https://github.com/x51ming/rep-attention.git
     cd *
     ```
 

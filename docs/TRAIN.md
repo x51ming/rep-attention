@@ -54,8 +54,13 @@ root
 2. Evaluate
    
    ```bash
-   # this is an example
-   python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repnet.py --import_ repnet50 --evaluate_model logs/se_rep/model_best_rep.pth.tar
+   # Examples:
+
+   # GENet (ours) * Prec@1 82.559 Prec@5 95.801
+   python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repge.py --import_ repge50 --evaluate_model logs/ge_rep/model_best_ge_rep.pth.tar --data ../I100/ --batch-size 128
+
+   # CoordAttention (ours)  * Prec@1 83.379 Prec@5 95.957
+   python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repcoordatt.py --import_ coordatt_repnet50 --evaluate_model logs/coordatt_rep/model_best.pth.tar --data ../I100/ --batch-size 128
    ```
 
 # ImageNet-1K

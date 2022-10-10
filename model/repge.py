@@ -23,7 +23,7 @@ class Downblock(nn.Module):
 
 
 class GEBlock(RealSEModule):
-    def __init__(self, channels, reduction=16, *, size=None, extra_params=True, extent=8):
+    def __init__(self, channels, reduction=16, *, size=None, extra_params=True, extent=4):
         # extent: 2,4,8
         super().__init__(channels, reduction=reduction, size=size)
         extra_params = gState.args.extra_params
