@@ -56,11 +56,17 @@ root
    ```bash
    # Examples:
 
+   # SENet (ours) * Prec@1 82.891 Prec@5 95.996
+   python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repnet.py --import_ repnet50 --evaluate_model logs/se_rep/model_best_rep.pth.tar --data ../I100/ --batch-size 128
+
    # GENet (ours) * Prec@1 82.559 Prec@5 95.801
    python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repge.py --import_ repge50 --evaluate_model logs/ge_rep/model_best_ge_rep.pth.tar --data ../I100/ --batch-size 128
 
-   # CoordAttention (ours)  * Prec@1 83.379 Prec@5 95.957
+   # CoordAttention (ours) * Prec@1 83.379 Prec@5 95.957
    python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repcoordatt.py --import_ coordatt_repnet50 --evaluate_model logs/coordatt_rep/model_best.pth.tar --data ../I100/ --batch-size 128
+
+   # CBAM (ours) * Prec@1 82.168 Prec@5 95.332
+   python evaluate.py --data ./data/I100 --num_classes 100 --from_ model/repcbam.py --import_ cbam_repnet50 --evaluate_model logs/cbam_rep/model_best_cbam_rep.pth.tar --data ../I100/ --batch-size 128
    ```
 
 # ImageNet-1K
